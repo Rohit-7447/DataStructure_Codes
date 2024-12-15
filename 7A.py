@@ -85,9 +85,9 @@ if __name__ == "__main__":
     bst.preorder(bst.root)
     print("\n")
 
-    print("PostOrder Traversal: ")
-    bst.postorder(bst.root)
-    print("\n")
+    # print("PostOrder Traversal: ")
+    # bst.postorder(bst.root)
+    # print("\n")
 
     bst.root = bst.delete(bst.root,50)
     bst.inorder(bst.root)
