@@ -25,7 +25,7 @@ class StudentHashTable:
   
     def retrieve_student(self,student_id):
         index = self.hash_function(student_id)
-        for student in enumerate(table[index]):
+        for student in enumerate(self.table[index]):
             if student.student_id == student_id:
                 return student
         return None
