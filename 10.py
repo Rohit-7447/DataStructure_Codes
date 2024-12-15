@@ -13,11 +13,11 @@ def binary_search(dictionary,word):
     return f"'{word}' not found in the dictionary"
     
 dictionary = [
-    ("apple","A fruit that is red or green.")
-    ("banana","A long, yellow fruit.")
-    ("cat","A small domesticated carnivorous animal")
+    ("apple","A fruit that is red or green."),
+    ("banana","A long, yellow fruit."),
+    ("cat","A small domesticated carnivorous animal"),
      ("dog", "A domesticated carnivorous mammal."), 
-    ("elephant", "A large herbivorous mammal.") 
+    ("elephant", "A large herbivorous mammal."), 
     ]
     
 word_tofind = "dog"
