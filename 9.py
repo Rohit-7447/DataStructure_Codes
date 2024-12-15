@@ -44,7 +44,7 @@ class StudentHashTable:
         print("All students record.")
         for index, students in enumerate(self.table):
             for student in students:
-                print(student)
+                print(f"student ID: {student.student_id}, Student Name: {student.name}, Student's Age: {student.age}, Student's Major: {student.major}")
                 
 def main():
     system = StudentHashTable()
