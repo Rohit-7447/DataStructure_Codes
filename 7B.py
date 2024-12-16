@@ -9,7 +9,6 @@ class BinarySearchTree:
     def __init__(self):
         self.root = None
 
-    # Fix 1: Corrected the insert function to handle `None` cases properly and avoid overwriting the root.
     def insert(self, root, key):
         if root is None:
             return Node(key)
@@ -25,7 +24,6 @@ class BinarySearchTree:
 
         return root
 
-    # Fix 2: Corrected the search function to handle search properly without recursion returning `None`.
     def search(self, root, key):
         if root is None:
             return False  # Key not found
@@ -38,28 +36,24 @@ class BinarySearchTree:
         else:
             return self.search(root.right, key)
 
-    # Inorder traversal (Left, Root, Right)
     def inorder(self, root):
         if root:
             self.inorder(root.left)
             print(root.key, end=" ")
             self.inorder(root.right)
 
-    # Preorder traversal (Root, Left, Right)
     def preorder(self, root):
         if root:
             print(root.key, end=" ")
             self.preorder(root.left)
             self.preorder(root.right)
 
-    # Postorder traversal (Left, Right, Root)
     def postorder(self, root):
         if root:
             self.postorder(root.left)
             self.postorder(root.right)
             print(root.key, end=" ")
 
-    # Find the depth of the BST
     def tree_depth(self, root):
         if root is None:
             return 0
@@ -71,7 +65,6 @@ class BinarySearchTree:
 if __name__ == "__main__":
     bst = BinarySearchTree()
 
-    # Fix 3: Corrected prompt and ensured inputs are properly handled.
     nodes = list(map(int, input("Enter the elements to insert into the binary tree (space-separated): ").split()))
     for key in nodes:
         bst.root = bst.insert(bst.root, key)
